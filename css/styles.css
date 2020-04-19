@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 10px;
+  background-color: #5dade2;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -9,19 +15,21 @@
   grid-auto-rows: minmax(200px, auto);
 }
 
-.grid-container > div:nth-child(odd) {
-  background-color: cadetblue;
-}
-
 .grid-item {
-  background-color: azure;
   padding: 1em;
   border-radius: 5px;
+  box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.06);
+  background-color: #f1c40f;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .header {
-  background-color: #000;
-  color: #FFF;
+  background-color:;
+  color: #ecf0f1;
   padding: 1em;
   margin-bottom: 1em;
 }
@@ -33,6 +41,19 @@
   grid-row: 1/4;
 }
 
-* {
-  border: 1px solid red;
-}
+
+
+/* COLOR PALETTE
+#5dade2 blue
+#f1c40f yellow
+#48c9b0 green
+#ecf0f1 grey
+#45b39d green - a little darker
+#e74c3c red
+
+rgb(93, 173, 226)
+rgb(241, 196, 15)
+rgb(72, 201, 176)
+rgb(236, 240, 241)
+rgb(69, 179, 157)
+rgb(231, 76, 60) */
