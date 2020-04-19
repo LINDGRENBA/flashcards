@@ -1,11 +1,12 @@
 $(document).ready(function() {
-  $(".word", ".grid-item").click(function() {
-    $(this).hide();
-    $(this).siblings(".definition").show();
+  $(".card1").click(function() {
+    $("#javascript-definition").toggle();
+    $("#javascript-word").toggle();
   });
 
-  $(".definition", ".grid-item").click(function() {
-    $(this).hide();
-    $(this).siblings(".word").show();
+  $(".card2").click(function() {
+    $("#operators-definition").toggle();
+    $("#operators-word").toggle();
   });
 });
+

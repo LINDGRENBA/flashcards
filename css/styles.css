@@ -24,22 +24,39 @@ body {
 
 .grid-item:hover {
   cursor: pointer;
+}
+
+.grid-item h3:hover {
   text-decoration: underline;
 }
 
 .header {
-  background-color:;
   color: #ecf0f1;
   padding: 1em;
   margin-bottom: 1em;
 }
 
+p {
+  color: black;
+}
+
+div > h3 {
+  text-align: center;
+}
+
+.definition {
+  display: none;
+}
+
+
+
+
 /* CARDS */
 
-.item1 {
+/* .item1 {
   grid-column: 1/2;
   grid-row: 1/4;
-}
+} */
 
 
 
