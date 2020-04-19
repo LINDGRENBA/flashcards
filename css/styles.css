@@ -1,3 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
 .grid-container {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.grid-container > div:nth-child(odd) {
+  background-color: cadetblue;
+}
+
+.grid-item {
+  background-color: azure;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.header {
+  background-color: #000;
+  color: #FFF;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+/* CARDS */
+
+.item1 {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+* {
+  border: 1px solid red;
 }
